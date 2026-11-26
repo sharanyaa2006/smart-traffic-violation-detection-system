@@ -1,0 +1,29 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Large media - don't commit these to git
+data/videos/*
+!data/videos/.gitkeep
+data/snapshots/*
+!data/snapshots/.gitkeep
+
+# Model weights - don't ignore best.pt (it's a required project deliverable),
+# but do ignore any stray/backup weight files
+*.pt
+!models/best.pt
+
+# Old/unused files from earlier iterations
+old_best.pt
+old_traffic.mp4
+
+# YOLO auto-generated training run outputs
+runs/
+
+# IDE
+.vscode/
+.idea/
+.pytest_cache/
+*.cache
+data/helmet_dataset/
